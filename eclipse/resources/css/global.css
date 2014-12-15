@@ -1,0 +1,43 @@
+.btn-nomarge{
+	margin: 0;
+}
+
+.mon_form_control {
+	height: 36px;
+	padding: 5px;
+}
+
+select.mon_form_control {
+	background-color: white;
+}
+
+.container {
+	width: 85%;
+}
+
+.rating-disabled {
+	cursor: default!important;
+}
+
+.rating-xs {
+	font-size: 1.5em!important;
+}
+
+.publicite {
+	width: 400px;
+	height: 200px;
+	margin: auto;
+	box-shadow: 10px 10px 5px #656565;
+}
+
+.list-line {
+	margin-top: 5px;
+}
+
+.banner { position: relative; overflow: auto; }
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+
+.banner>ul {
+	padding: 0px;
+}

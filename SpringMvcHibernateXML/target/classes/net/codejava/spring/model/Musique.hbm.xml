@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="net.codejava.spring.model">
+	<class name="Musique" table="Musique">
+		<id name="id" column="mu_id">
+			<generator class="native"/>
+		</id>
+		<property name="titre" column="titre" />
+		<many-to-one name="Album" class="net.codejava.spring.model.Album"
+            column="al_id" unique="true" not-null="false" lazy="false"
+            cascade="persist" />
+		<many-to-one name="Artiste" class="net.codejava.spring.model.Artiste"
+            column="ar_id" unique="true" not-null="false" lazy="false"
+            cascade="persist" />
+        <many-to-one name="Genre" class="net.codejava.spring.model.Genre"
+            column="ge_id" unique="true" not-null="false" lazy="false"
+            cascade="persist" />
+        <property name="fichier" column="fichier" />
+	</class>	
+</hibernate-mapping>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="net.codejava.spring.model">
+	<class name="CommentaireMusique" table="Commentaire_Musique">
+		<id name="id" column="cm_id">
+			<generator class="native"/>
+		</id>
+		<property name="note" column="note" />
+		<property name="commentaire" column="com" />
+		<many-to-one name="musique" class="net.codejava.spring.model.Musique"
+            column="mu_id" unique="true" not-null="false" lazy="false"
+            cascade="persist" />
+	</class>	
+</hibernate-mapping>

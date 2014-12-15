@@ -1,0 +1,4 @@
+http://192.168.12.92:8443/musik_kloud http://192.168.12.92:8443/musik_kloud/img/pub.png
+http://192.168.12.113:8080/musicloud http://192.168.12.113:8080/musicloud/app/pub.mp3
+http://192.168.12.93:8080/musikloud http://192.168.12.93:8080/musikloud/resources/image/bannierePub.png
+http://192.168.12.106:8080/spring http://192.168.12.106:8080/spring/images/banniere.png
